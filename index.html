@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>SVG country downloader</title>
+  <script src="js/d3/d3.v3.min.js"></script>
+  <script src="js/d3/topojson.v1.min.js"></script>
+  <script src="js/d3/queue.v1.min.js"></script>
+  <script src="js/FileSaver/FileSaver.min.js"></script>
+  <script src="js/jquery/jquery-2.2.4.min.js"></script>
+  <link rel='stylesheet' href="css/style.css" type="text/css">
+</head>
+<body>
+  <div id="contentContainer">
+    <div id="topExplainerContent">
+      <h3>Country shape SVG exporter</h3>
+      <h4>A tool for artists and non-programmers to export SVG shapes of countries</h4>
+      <p>This globe is a better representation of countries' shapes than projections that depict the world as flat. These shapes are useful for seeing countries in isolation or comparing land masses. These shapes will not snap together. For snapping shapes, there are many world projections like Mercator and Robinson.</p>
+      <p>I'm not anti-Mercator, but <a href="http://thetruesize.com/#?borders=1~!MTcxOTU3NTI.NjA4MzYz*MzYwMDAwMDA(MA~!GL*ODI0MTcyNA.MzQxNjcyNjI)Mw~!RU*NjcyODU3NA.MTU1NTAyNQ)MA~!CA*MTEwNDExNzI.MTE1NjI2NDY)MQ" target="_blank">this website</a> shows it has limitations. Here's some reading material on projections - <a href="https://xkcd.com/977/" target="_blank">XKCD</a>, <a href="https://www.britannica.com/science/Mercator-projection" target="_blank">Britanica</a>.
+      <p>The original code is a <a href="http://bl.ocks.org/KoGor/5994804" target="_target">bl.ocks project</a> by KoGor.</p>
+      <div id="userOptions">
+        <select name="countries"></select>
+        <button id="savePath">Save SVG shape</button>
+      </div>
+    </div>
+  </div>
+  <script src="js/countrySelect.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
